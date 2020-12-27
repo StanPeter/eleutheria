@@ -1,38 +1,44 @@
 """
-	
-	HOW TO CREATE A WEB APP
+	1. What application and Why?
+		- A flight search web application searching flights from commercial companies such as Ryanair using their API / or legally scraped data
+		- Specialized on Europe sector
+		- Created for learning purposes
+
+		- There are thousands of flight companies and at least hunders of those who sell tickets from existing companies 
+		but all I've seen were missing improved search filters or good UI or UX
+
+
+	2. Functionality
+		- Authentication and Authorization with three types: User || Admin || Owner
+			- User shall have basic features of seeing, buying with already filled forms...
+			- Admin can modify some stuff + can see most what Owner but without update options
+			- Owner can see all User accounts and can manipulate with all data as well, he's a god in there
+		- Change and lost password
+		- Search(departure, return, anytime, one-way, range of dates, multiple cities, )
+		- Display all possible destinations(Europe)
+		- Scrape multiple widely used companies -> using their API or robots.txt allowed parts(not commercial purposes anyway)
+		- Detail about logged user
+		- User can see history of his flights
+		- CRUD according to rights
+		- User will be gaining bonus credits from each bought flight
+		- Frequently asked question section
+		- Section with explained airlines information / restrictions
+		- Link on Nomadenlager app which is specialized on different hiking trips around Europe
+
+		- Currency change
+		- Language change
 
 
 
+	3. Languages, Technologies(version)
 
-	1. Think what kind of app you want
-		- Your idea should stem from solving someone’s problem. Ideally, your own problem.
+		FE: HTML(5), CSS(3), Bootstrap(4), React(17), Redux, Typescript(4)
+		BE: Node(15), Express(4), MongoDB(4)
 
-
-	2. Market research
-		- If a similar product exists ?
-		- If a market exists ?
+		others: GraphQL, git, firebase, Travis|Jekin(not sure yet)
 
 
-	3. Define your web apps functionality
-		- Don't get carried away, more functionalities means more stress
-		- One of the most important aspects of making a web app is having fun, enjoying the ride,
-		and celebrating the small wins. Of course in case its just on CV or none profit project
-
-		Simple example:
-			Users can create an account
-			Users can retrieve lost passwords
-			Users can change their passwords
-			Users can create new contacts
-			Users can upload new contacts
-			Users can assign a value to contacts
-			Users can write notes under contacts
-			Users can label a contact as a lead, customer, or associate
-			Users can filter contacts by lead, customer, or associate
-			Users can view the total value of leads, customers and associates
-
-
-	4. Sketch your web app(wireframe)
+	4. Sketch your web app(wireframe) NOT DONE
 		- This involves browsing over other apps and inventing an idea about design (just sketch, not 100 % )
 
 		When sketching, consider the following:
@@ -46,24 +52,33 @@
 		not selling. Overcomplicating the design at this stage will only lead to frustration.
 
 
-	5. Plan your web apps workflow
-		- Compare apps others, what did you like vs disliked?
+	5. Ideas from other existing applications
+		- https://www.britishairways.com
+			- Terms and conditions which doesn't blind or piss off user
+			- Footer quite many links + policy
+		- https://www.kiwi.com/
+			- Great design
+			- Many useful features
+		- https://www.skyscanner.net/
+			- Very simple
+		- https://www.opodo.com/
+			- Quite simple as well, might be useful
+		- https://www.tripadvisor.com/
+			- Nice search bar dropdown when scrolling down but terrible background
+		
 
-		After you’ve finished analysing your competitor’s web apps, it’s time to write down different workflows for your app.
-		Consider the following points:
 
-			How does a user signup
-			Do they receive a verification email
-			How does a user login
-			How does a user change their password
-			How does a user navigate through the app
-			How does a user change their user settings
-			How does a user pay for the app
-			How does a user cancel their subscription
-			All of a sudden our one-page web app turns into a 10-page web app.
 
-		-Consider the different states of pages. For example, the homepage will have two states;
-		logged in and logged out. Logged in users will see a different page than logged out users.
+
+
+
+
+
+
+
+
+
+
 
 
 	6. Wireframing / Prototyping Your Web Application
