@@ -1,0 +1,190 @@
+"""
+	
+	HOW TO CREATE A WEB APP
+
+
+
+
+	1. Think what kind of app you want
+		- Your idea should stem from solving someone’s problem. Ideally, your own problem.
+
+
+	2. Market research
+		- If a similar product exists ?
+		- If a market exists ?
+
+
+	3. Define your web apps functionality
+		- Don't get carried away, more functionalities means more stress
+		- One of the most important aspects of making a web app is having fun, enjoying the ride,
+		and celebrating the small wins. Of course in case its just on CV or none profit project
+
+		Simple example:
+			Users can create an account
+			Users can retrieve lost passwords
+			Users can change their passwords
+			Users can create new contacts
+			Users can upload new contacts
+			Users can assign a value to contacts
+			Users can write notes under contacts
+			Users can label a contact as a lead, customer, or associate
+			Users can filter contacts by lead, customer, or associate
+			Users can view the total value of leads, customers and associates
+
+
+	4. Sketch your web app(wireframe)
+		- This involves browsing over other apps and inventing an idea about design (just sketch, not 100 % )
+
+		When sketching, consider the following:
+			Navigation
+			Branding
+			Forms
+			Buttons
+			Any other interactive elements
+
+		- Once again, don’t get carried here. Your sketch is for communicating and experimenting,
+		not selling. Overcomplicating the design at this stage will only lead to frustration.
+
+
+	5. Plan your web apps workflow
+		- Compare apps others, what did you like vs disliked?
+
+		After you’ve finished analysing your competitor’s web apps, it’s time to write down different workflows for your app.
+		Consider the following points:
+
+			How does a user signup
+			Do they receive a verification email
+			How does a user login
+			How does a user change their password
+			How does a user navigate through the app
+			How does a user change their user settings
+			How does a user pay for the app
+			How does a user cancel their subscription
+			All of a sudden our one-page web app turns into a 10-page web app.
+
+		-Consider the different states of pages. For example, the homepage will have two states;
+		logged in and logged out. Logged in users will see a different page than logged out users.
+
+
+	6. Wireframing / Prototyping Your Web Application
+		- Now real wireframe of all pages
+
+		- Use: 'Figma' or 'Balsamiq'
+
+
+	7. Seek early validation(only for real app of course)
+		- Find out whether your app could be used
+
+
+		Tips before development:
+			-Attempt to get a small section of your app fully working. What we would call a “Complete Vertical”.
+		Building the smallest possible section will allow you to piece all the bits together, and iron out those creases early.
+		You will get great satisfaction early by having something working - great motivation.
+		Create things that you know you will throw away later - if it gets you something working now.
+
+			-At the start - expect things to change a lot as you learn and discover what you haven’t thought about.
+		Have faith that your app will stabilise.
+		Don’t be afraid to make big changes.
+
+			-Spend time learning your tools.
+		You may feel like you are wasting your time, reading, or experimenting with “hello world”. Learning the correct way to do things 				will have a huge positive, cumulative effect on your productivity over time.
+
+		Where possible, “Go with the grain” of your tools. Realise that as soon as you step out of
+		the normal flow / usage of your toolset, you are on your own and could be in a deep time sink.
+		There are always exceptions to this of course!
+
+			- Don’t avoid issues that need to be fixed.
+		Face your issues head on - they will never go away and will only grow in stature.
+		However, If things are still likely to change - its best to spend as little time as possible on things… It’s a tricky balance!
+
+
+
+	8. Architect and build your database
+		- Now it’s time to determine what information we will store in our database.
+		-Decide whether to use SQL vs Document Database
+		- Structure of tables(what sort of data?)
+
+
+	9. Build FE and BE
+		When building your web app, you need to choose between:
+
+			Server Pages(Multiple Page Application)
+			Single Page Application
+
+
+		The primary jobs of the backend will be to:
+
+			Provide HTTP endpoints for your frontend, which allow it to operate on your data. E.g. Create, Read, Update and Delete(“CRUD”) records.
+			Authenticate users (verify they are who they say they are: aka log them in ).
+			Authorization. When a logged in user makes a request, the backend will determine whether they are allowed(authorized) to perform the 				requested action.
+			Serve the frontend
+
+
+		Login/User & Session Management
+
+			How will users authenticate?
+			Username and password?
+			Open ID(i.e. sign in as Google, FB, etc)
+			Be sure to read up on security best practices. I highly recommend: OWASP
+			What user levels will you create in the system?
+
+
+		Environments. You will usually need to create multiple environments. For example:
+
+			Testing - for all the latest development features.
+			Beta - to give early releases to clients.
+			Production - Your live system.
+
+
+		CODING TIME
+
+		a) set up both FE and BE
+
+		b) FE wireframe + structure of UI components / components / layout -> create the index page
+
+		c) BE api structure and DB structure(connect with 8. idea)
+
+		d) FE add routes, redux? -> reducers, actions, typescript
+
+		e) add graphQL / others
+
+		f) Do BE/FE validation
+
+		g) FE mockData + other pages
+
+		h) BE basic api
+
+		j)...
+
+
+	10. Host your web application
+
+		If you are not using Budibase to host your web application, follow these quick steps:
+
+		-Buy a domain - Namecheap
+		- Buy/Setup an SSL certificate - Let’s Encrypt
+		- Choose a cloud provider:
+			Amazon
+			MS Azure
+			Google Cloud Platform
+			Lower cost: Digital Ocean / Linode - if you are happy managing your own VMs
+
+		Zeit Now, Heroku, Firebase are interesting alternatives that aim to be faster and easier to get things done
+		 - you should read about what they offer.
+
+		Choosing one of these hosting options will almost certainly provide you with everything you need. They have ample documentation and community support, and are generally reliable options.
+
+
+	11. Deploy your web app
+
+		- How does your application get from Source Control / Your computer to your cloud hosting provider?
+
+		- The following development tools provide continuous integration and will help you with deploying your web app to your cloud hosting:
+			GitLab
+			Bitbucket
+			Jenkins
+
+
+"""
+	
+	
