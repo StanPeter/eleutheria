@@ -1,0 +1,22 @@
+{
+  "name": "eletheria",
+  "version": "1.0.0",
+  "description": "A flight searching website",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tsc -w",
+    "dev": "nodemon dist/index.js",
+    "dev2": "nodemon --exec ts-node src/index.ts",
+    "start": "ts-node dist/index.js",
+    "start2": "ts-node src/index.ts"
+  },
+  "keywords": [],
+  "author": "stan05",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^14.14.37",
+    "nodemon": "^2.0.7",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3"
+  }
+}
